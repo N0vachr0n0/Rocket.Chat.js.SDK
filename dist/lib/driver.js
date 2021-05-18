@@ -439,6 +439,8 @@ function respondToMessages(callback, options = {}) {
             log_1.logger.error(`[received] Unable to receive: ${err.message}`);
             callback(err); // bubble errors back to adapter
         }
+        // to fix '_id' problem
+        message = message.slice(0,1).shift();
         // Ignore bot's own messages
         if (message.u._id === exports.userId)
             return;
