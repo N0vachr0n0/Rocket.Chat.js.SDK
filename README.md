@@ -25,7 +25,7 @@ v8.9.3
 In a project directory, add Rocket.Chat.js.SDK as dependency:
 
 ```
-// npm install @rocket.chat/sdk --save 
+// npm install @rocket.chat/sdk --save (Old)
 npm i https://github.com/N0vachr0n0/Rocket.Chat.js.SDK --save
 ```
 
